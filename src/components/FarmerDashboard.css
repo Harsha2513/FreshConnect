@@ -1,0 +1,283 @@
+.farmer-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f7f4;
+  font-family: Arial, sans-serif;
+}
+
+.farmer-sidebar {
+  width: 255px;
+  background: #123c2a;
+  color: white;
+  padding: 28px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.farmer-sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 23px;
+}
+
+.farmer-label {
+  font-size: 11px;
+  color: #b8d8c5;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.farmer-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.farmer-sidebar nav button {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  text-align: left;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.farmer-sidebar nav button:hover {
+  background: #286347;
+}
+
+.farmer-logout {
+  margin-top: auto;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  color: #123c2a;
+  background: #eaf5ee;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.farmer-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.farmer-topbar {
+  background: white;
+  padding: 22px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px #00000008;
+}
+
+.farmer-topbar h2 {
+  color: #174c32;
+  margin: 0;
+}
+
+.farmer-topbar p {
+  color: #777;
+}
+
+.farmer-user {
+  background: #eaf5ee;
+  padding: 12px 18px;
+  border-radius: 25px;
+  color: #174c32;
+}
+
+.farmer-content {
+  padding: 32px;
+}
+
+.farmer-content h1 {
+  color: #174c32;
+}
+
+.farmer-subtitle {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.farmer-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin: 30px 0;
+}
+
+.farmer-stats > div {
+  background: white;
+  padding: 23px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000008;
+}
+
+.farmer-stats span {
+  font-size: 28px;
+}
+
+.farmer-stats h2 {
+  color: #21834c;
+  margin-bottom: 5px;
+}
+
+.farmer-stats p {
+  color: #777;
+  font-size: 14px;
+}
+
+.farmer-heading {
+  color: #174c32;
+  margin: 35px 0 18px;
+}
+
+.farmer-table-wrapper {
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  margin: 22px 0;
+  box-shadow: 0 3px 12px #00000008;
+}
+
+.farmer-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.farmer-table th,
+.farmer-table td {
+  padding: 17px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.farmer-table th {
+  background: #eaf5ee;
+  color: #174c32;
+}
+
+.farmer-form,
+.farmer-profile {
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 3px 12px #00000008;
+  margin-top: 25px;
+}
+
+.farmer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.farmer-form label {
+  color: #174c32;
+  font-weight: bold;
+}
+
+.farmer-form input,
+.farmer-form select {
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  margin-bottom: 12px;
+}
+
+.farmer-form button,
+.farmer-primary {
+  padding: 13px 20px;
+  background: #21834c;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.farmer-delete {
+  background: #ffe8e8;
+  color: #b42318;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 13px;
+  cursor: pointer;
+}
+
+.stock-input {
+  width: 90px;
+  padding: 9px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.order-status {
+  padding: 7px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  background: #fff3cd;
+}
+
+.order-status.delivered {
+  background: #d9f5e3;
+  color: #176638;
+}
+
+.order-status.processing {
+  background: #dcecff;
+  color: #245c9b;
+}
+
+.farmer-note {
+  color: #777;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.farmer-profile p {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 950px) {
+  .farmer-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .farmer-dashboard {
+    flex-direction: column;
+  }
+
+  .farmer-sidebar {
+    width: auto;
+  }
+
+  .farmer-sidebar nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .farmer-logout {
+    margin-top: 20px;
+  }
+
+  .farmer-content {
+    padding: 18px;
+  }
+
+  .farmer-topbar {
+    padding: 18px;
+  }
+
+  .farmer-stats {
+    grid-template-columns: 1fr;
+  }
+}

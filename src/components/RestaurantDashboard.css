@@ -1,0 +1,256 @@
+.restaurant-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f8f5;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-sidebar {
+  width: 250px;
+  background: #123c2a;
+  color: white;
+  padding: 28px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-sidebar h2 {
+  font-size: 23px;
+  margin-bottom: 35px;
+}
+
+.sidebar-label {
+  font-size: 11px;
+  color: #b8d8c5;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.dashboard-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dashboard-sidebar nav button {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 14px;
+  text-align: left;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.dashboard-sidebar nav button:hover {
+  background: #286347;
+}
+
+.dashboard-logout {
+  margin-top: auto;
+  padding: 13px;
+  background: #eaf5ee;
+  color: #123c2a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dashboard-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.dashboard-topbar {
+  background: white;
+  padding: 22px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px #00000008;
+}
+
+.dashboard-topbar h2 {
+  margin: 0;
+  color: #174c32;
+}
+
+.dashboard-topbar p {
+  color: #777;
+  margin-bottom: 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info span {
+  background: #e5f3e9;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.dashboard-content {
+  padding: 35px;
+}
+
+.dashboard-content h1 {
+  color: #174c32;
+  font-size: 28px;
+}
+
+.dashboard-subtitle {
+  color: #777;
+  margin-bottom: 28px;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin: 30px 0;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000008;
+}
+
+.dashboard-card span {
+  font-size: 28px;
+}
+
+.dashboard-card h3 {
+  font-size: 27px;
+  color: #174c32;
+  margin: 12px 0 5px;
+}
+
+.dashboard-card p {
+  color: #777;
+}
+
+.content-heading {
+  color: #174c32;
+  margin: 35px 0 20px;
+}
+
+.dashboard-products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.dashboard-product {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000008;
+}
+
+.dashboard-product h3 {
+  color: #174c32;
+}
+
+.dashboard-product p {
+  color: #777;
+}
+
+.dashboard-product h4 {
+  color: #25834e;
+}
+
+.dashboard-product button {
+  width: 100%;
+  padding: 11px;
+  background: #21834c;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.dashboard-product button:hover {
+  background: #176638;
+}
+
+.dashboard-search {
+  width: 100%;
+  max-width: 400px;
+  padding: 13px;
+  margin: 15px 0 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.dashboard-cart-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  margin: 12px 0;
+  border-radius: 9px;
+}
+
+.cart-total {
+  color: #21834c;
+  margin-top: 25px;
+}
+
+.empty-orders,
+.profile-card {
+  background: white;
+  padding: 30px;
+  margin-top: 25px;
+  border-radius: 12px;
+}
+
+.empty-orders span {
+  font-size: 45px;
+}
+
+@media (max-width: 850px) {
+  .restaurant-dashboard {
+    flex-direction: column;
+  }
+
+  .dashboard-sidebar {
+    width: auto;
+  }
+
+  .dashboard-sidebar nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-logout {
+    margin-top: 20px;
+  }
+
+  .dashboard-cards,
+  .dashboard-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .dashboard-content {
+    padding: 20px;
+  }
+
+  .dashboard-cards,
+  .dashboard-products {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-topbar {
+    padding: 18px;
+  }
+}

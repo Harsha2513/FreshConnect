@@ -1,0 +1,94 @@
+.fc-admin{min-height:100vh;display:flex;background:#f3f7f4;color:#173d2d;font-family:Inter,system-ui,Arial,sans-serif}.fc-admin-side{width:250px;flex-shrink:0;background:#103d2b;color:#fff;padding:28px 18px;display:flex;flex-direction:column}.fc-admin-brand{font-size:21px;font-weight:800;padding:5px 12px 34px}.fc-admin-brand small{display:block;font-size:10px;letter-spacing:2px;color:#a9d4bd;margin:9px 0 0 37px}.fc-admin-nav{display:grid;gap:8px}.fc-admin-nav button{border:0;background:transparent;color:#d8e9df;text-align:left;padding:14px 13px;border-radius:11px;font-size:16px;cursor:pointer}.fc-admin-nav button span{margin-left:10px}.fc-admin-nav button.selected,.fc-admin-nav button:hover{background:#e8f5ed;color:#164c34;font-weight:700}.fc-admin-side-bottom{margin-top:auto;display:grid;gap:18px;padding:18px 10px 4px;color:#b9d7c6;font-size:13px}.fc-admin-side-bottom b{display:inline-block;color:#fff;margin-top:5px}.fc-admin-side-bottom button{border:0;border-radius:10px;background:#e8f5ed;color:#164c34;padding:13px;font-weight:700;cursor:pointer}.fc-admin-main{min-width:0;flex:1;padding:28px 34px 50px}.fc-admin-top{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #dce9e0;padding:0 0 22px}.fc-admin-top span,.fc-admin-welcome span{font-size:11px;letter-spacing:2px;color:#6c927b;font-weight:700}.fc-admin-top h1{font-size:28px;margin:5px 0 0}.fc-admin-user{background:#e4f2e9;border-radius:30px;padding:13px 18px;font-weight:700}.fc-admin-welcome{display:flex;align-items:center;justify-content:space-between;margin:27px 0}.fc-admin-welcome h2{font-size:25px;margin:7px 0}.fc-admin-welcome p,.fc-admin-panel-head p{margin:0;color:#789083}.fc-admin-welcome button,.fc-admin-panel-head button{border:0;border-radius:9px;background:#164d35;color:white;padding:11px 16px;font-weight:700;cursor:pointer}.fc-admin-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin-bottom:22px}.fc-admin-stat{background:white;border:1px solid #e4eee7;border-radius:15px;padding:20px;box-shadow:0 5px 18px #173d2d08;display:grid;gap:7px}.fc-admin-stat>span{font-size:23px}.fc-admin-stat small{color:#71887a;font-weight:600}.fc-admin-stat strong{font-size:28px;color:#164d35}.fc-admin-stat em{font-size:12px;color:#8a9b90;font-style:normal}.fc-admin-panel{background:white;border:1px solid #e2ece5;border-radius:15px;margin-top:20px;overflow:hidden;box-shadow:0 5px 18px #173d2d08}.fc-admin-panel-head{padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:15px}.fc-admin-panel-head h3{font-size:18px;margin:0 0 5px}.fc-admin-panel-head input{border:1px solid #dce8df;border-radius:9px;padding:11px 13px;min-width:210px;outline-color:#4b9b6d}.fc-admin-table-wrap{overflow:auto} .fc-admin table{width:100%;border-collapse:collapse;min-width:720px;text-align:left}.fc-admin th{background:#edf6f0;color:#557765;font-size:12px;text-transform:uppercase;letter-spacing:.5px}.fc-admin th,.fc-admin td{padding:14px 18px;border-top:1px solid #edf2ee}.fc-admin td{font-size:13px;color:#3f5c4b}.fc-admin td b{color:#214b35}.fc-admin td small{display:block;color:#8a9b90;margin-top:4px}.fc-admin-role,.fc-admin-status{display:inline-block;border-radius:30px;padding:5px 9px;background:#eef4ef;color:#426650;font-size:11px;font-weight:700}.fc-admin-status.on{background:#e5f6eb;color:#21834a}.fc-admin-status.off{background:#fff0e9;color:#bd5b34}.fc-admin-action{border:1px solid #d8e7dc;background:#f4faf6;color:#245d3c;border-radius:7px;padding:7px 10px;cursor:pointer;font-weight:700;font-size:12px}.fc-admin-empty,.fc-admin-loading{padding:28px;text-align:center;color:#779080}.fc-admin-error{background:#fff0ed;color:#a13f2d;border:1px solid #f3d2ca;padding:12px 15px;border-radius:9px;margin:16px 0}@media(max-width:850px){.fc-admin-side{width:190px}.fc-admin-main{padding:22px 18px}.fc-admin-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.fc-admin{display:block}.fc-admin-side{width:auto;padding:15px}.fc-admin-brand{padding-bottom:12px}.fc-admin-nav{grid-template-columns:repeat(4,1fr)}.fc-admin-nav button{text-align:center;padding:10px 3px;font-size:12px}.fc-admin-nav button span{display:block;margin:4px 0 0}.fc-admin-side-bottom{display:flex;justify-content:space-between;align-items:center}.fc-admin-main{padding:18px 12px}.fc-admin-stats{grid-template-columns:1fr 1fr}.fc-admin-welcome{align-items:flex-start;gap:12px;flex-direction:column}.fc-admin-top h1{font-size:23px}.fc-admin-panel-head{align-items:flex-start;flex-direction:column;width:auto}.fc-admin-panel-head input{box-sizing:border-box;width:100%}}
+/* Admin upgrade styles */
+
+.fc-admin-panel-tools {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.fc-admin-panel-tools button,
+.fc-admin-panel-head > button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: #176b45;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.fc-admin-filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 20px 16px;
+}
+
+.fc-admin-filters select,
+.fc-admin-table-wrap select {
+  padding: 9px 12px;
+  border: 1px solid #dce5df;
+  border-radius: 7px;
+  background: white;
+}
+
+.fc-admin-error {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fc-admin-error button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.fc-admin-chart {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fc-admin-chart-row {
+  display: grid;
+  grid-template-columns: 100px minmax(80px, 1fr) 110px;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+}
+
+.fc-admin-chart-track {
+  height: 13px;
+  background: #edf2ee;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.fc-admin-chart-bar {
+  height: 100%;
+  background: #21865a;
+  border-radius: 20px;
+  min-width: 2px;
+}
+
+@media (max-width: 700px) {
+  .fc-admin-chart-row {
+    grid-template-columns: 75px minmax(50px, 1fr) 85px;
+    gap: 8px;
+    font-size: 11px;
+  }
+
+  .fc-admin-panel-tools {
+    width: 100%;
+  }
+
+  .fc-admin-panel-tools input {
+    min-width: 0;
+    width: 100%;
+  }
+}
